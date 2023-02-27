@@ -1,3 +1,3 @@
-
+"use strict";
 let username = "Hello, My name is Farhan ";
-console.log( username);
+console.log(username);
