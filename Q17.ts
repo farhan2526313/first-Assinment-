@@ -2,16 +2,14 @@ let FavCity: string[] = ["Lahore","Islamabad","Karachi","Toba","Gojra"];
 
 console.log(`Original Order :  ${FavCity}`);
 
-FavCity.sort();
-console.log(`In alphabetical order :  ${FavCity}`);
+console.log(`In alphabetical order :  ${FavCity.slice().sort()}`);
 
   
 console.log(`Original Order :  ${FavCity}`);
 
-FavCity.sort((a,b)=> b.localeCompare(a));
-console.log(`Reverse alphabetical order : ${FavCity}`);
-FavCity.sort();
-console.log(`Original Order :  ${FavCity}`);
+console.log(`Reverse alphabetical order : ${FavCity.slice().sort().reverse()} \n`);
+
+console.log(`Original Order :  ${FavCity}\n\n`);
 
 FavCity.reverse();
 console.log(`Reverse the order : ${FavCity}`);
@@ -19,6 +17,10 @@ console.log(`Reverse the order : ${FavCity}`);
 FavCity.reverse();      
 console.log(`Original Order :  ${FavCity}`);
 
+
+console.log(`In alphabetical order :  ${FavCity.slice().sort()}`);
+
+console.log(`Reverse alphabetical order : ${FavCity.slice().sort().reverse()} `);
 
 
 
